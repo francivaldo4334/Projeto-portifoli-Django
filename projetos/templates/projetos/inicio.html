@@ -4,6 +4,9 @@
     {% for projeto in projetos %}
     <div class="col-md-4">
         <div class="card mb-2">
+            {% if projeto.imagem %}
+            <img class="card-img-top" src="{{ projeto.imagem.url }}">
+            {% endif %}
             <div class="card-body">
                 <h5 class="card-title">
                     {{ projeto.titulo }}

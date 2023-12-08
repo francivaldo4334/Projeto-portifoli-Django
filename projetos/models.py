@@ -16,6 +16,12 @@ class Projeto(models.Model):
         verbose_name="tecnologia usada no projeto",
         help_text="tecnologia usada no projeto"
     )
+    imagem = models.FileField(
+        verbose_name='Imagem do projeo',
+        help_text='Imagem do projeto',
+        upload_to='imagens/',
+        blank=True,
+    )
     class Meta:
         db_table: str = "projeto"
         verbose_name: str = "projeto",
