@@ -9,6 +9,6 @@ router.register(r"api",ProjetoViewSet)
 urlpatterns = [
     path("",inicio,name="inicio"),
     path("<int:pk>/",detalhe,name="detalhe"),
-    path("api-auth/",include("rest_framework.urls",namespace="rest_framework"))
+    path("api-auth/",include("rest_framework.urls",namespace="rest_framework")),
 ]
 urlpatterns += router.urls
