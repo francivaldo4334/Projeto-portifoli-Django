@@ -4,7 +4,7 @@ from rest_framework import routers
 from projetos.views import ProjetoViewSet, detalhe, inicio
 
 router = routers.DefaultRouter()
-router.register(r"api",ProjetoViewSet)
+router.register('api',ProjetoViewSet)
 
 urlpatterns = [
     path("",inicio,name="inicio"),
